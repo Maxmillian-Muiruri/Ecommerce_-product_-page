@@ -1,44 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | E-commerce product page</title>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <ul>
+          <li>collections</li>
+          <li>men</li>
+          <li>women</li>
+          <li>about</li>
+          <li>contact</li>
+        </ul>
+      </nav>
+      <header class="header">
+        <h1>sneaker</h1>
+      </header>
+      <main class="main-content">
+      <div class="product">
+        <div class="product-img">
+          <img id="mainImage" src="/images/image-product-1.jpg" alt="" width="100"/>
+        </div>
+        <div class="thumbnail">
+          <img
+            src="/images/image-product-1-thumbnail.jpg"
+            alt=""
+            class="thumbnail"
+          />
+          <img
+            src="/images/image-product-2-thumbnail.jpg"
+            alt=""
+            class="thumbnail"
+          />
+          <img
+            src="/images/image-product-3-thumbnail.jpg"
+            alt=""
+            class="thumbnail"
+          /><img
+            src="/images/image-product-4-thumbnail.jpg"
+            alt=""
+            class="thumbnail"
+          />
+        </div>
+        <div class="product-details">
+          <h1>Fall Limited Edition Sneakers</h1>
+          
+      <p>These low-profile sneakers are your perfect casual wear companion.
+        Featuring a duarable rubber outer sole, they'll withstand
+         everything the weather can</p>
+         <div class="product-price">
+          <span class="curren-price">$125.00</span>
+          <span class="discount">50%</span>
+          <span class="original-price">$250.00</span>
+         </div>
+         <button id="addToCartButton" class="add-to-cart">add to cart</button>
+         <div id="cart">
 
-  Sneaker Company
+         </div>
+             <h2>Cart</h2>
+            <ul id="cartItems"></ul>
+        </div>
+      </div>
+      
+    </div>
+    <script src="script.js"></script>
 
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  </body>
 </html>
